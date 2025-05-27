@@ -1,0 +1,140 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --body-body-01-font-family: "Sofia Pro", Helvetica;
+  --body-body-01-font-size: 16px;
+  --body-body-01-font-style: normal;
+  --body-body-01-font-weight: 400;
+  --body-body-01-letter-spacing: 0px;
+  --body-body-01-line-height: 24px;
+  --body-body-02-font-family: "Sofia Pro", Helvetica;
+  --body-body-02-font-size: 14px;
+  --body-body-02-font-style: normal;
+  --body-body-02-font-weight: 400;
+  --body-body-02-letter-spacing: 0px;
+  --body-body-02-line-height: 22px;
+  --subtitle-subtitle-01-font-family: "Sofia Pro", Helvetica;
+  --subtitle-subtitle-01-font-size: 18px;
+  --subtitle-subtitle-01-font-style: normal;
+  --subtitle-subtitle-01-font-weight: 600;
+  --subtitle-subtitle-01-letter-spacing: 0px;
+  --subtitle-subtitle-01-line-height: 26px;
+  --subtitle-subtitle-03-font-family: "Sofia Pro", Helvetica;
+  --subtitle-subtitle-03-font-size: 14px;
+  --subtitle-subtitle-03-font-style: normal;
+  --subtitle-subtitle-03-font-weight: 600;
+  --subtitle-subtitle-03-letter-spacing: 0px;
+  --subtitle-subtitle-03-line-height: 22px;
+  --supporting-caption-02-font-family: "Sofia Pro", Helvetica;
+  --supporting-caption-02-font-size: 12px;
+  --supporting-caption-02-font-style: normal;
+  --supporting-caption-02-font-weight: 500;
+  --supporting-caption-02-letter-spacing: 0px;
+  --supporting-caption-02-line-height: 20px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove outline on focus for all input elements */
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Hide scrollbar track */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
