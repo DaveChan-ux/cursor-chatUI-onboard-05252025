@@ -1,4 +1,4 @@
-# Chat UI Project
+# cursor-chatUI-onboard-05252025
 
 Chat UI - input field, single image and media attach
 This chat UI project contains the following:
